@@ -193,6 +193,7 @@
     <Compile Include="Areas\HelpPage\SampleGeneration\TextSample.vb" />
     <Compile Include="Areas\HelpPage\XmlDocumentationProvider.vb" />
     <Compile Include="Controllers\ArticulosController.vb" />
+    <Compile Include="Controllers\BancosController.vb" />
     <Compile Include="Controllers\FacturasController.vb" />
     <Compile Include="Controllers\MonedaController.vb" />
     <Compile Include="Controllers\PaisesController.vb" />
@@ -315,6 +316,7 @@
     <Folder Include="App_Data\" />
     <Folder Include="Properties\" />
     <Folder Include="Views\Articulos\" />
+    <Folder Include="Views\Bancos\" />
     <Folder Include="Views\Facturas\" />
     <Folder Include="Views\Moneda\" />
     <Folder Include="Views\Paises\" />

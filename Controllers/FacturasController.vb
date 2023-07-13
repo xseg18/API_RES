@@ -3,6 +3,7 @@ Imports System.Web.Http
 Imports System.Web.Mvc
 Imports System.Xml
 Imports SAPbobsCOM
+Imports WS_REST.RespuestaArticulos
 
 Namespace Controllers
     Public Class FacturasController
