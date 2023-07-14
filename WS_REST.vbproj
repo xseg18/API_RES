@@ -192,8 +192,10 @@
     <Compile Include="Areas\HelpPage\SampleGeneration\SampleDirection.vb" />
     <Compile Include="Areas\HelpPage\SampleGeneration\TextSample.vb" />
     <Compile Include="Areas\HelpPage\XmlDocumentationProvider.vb" />
+    <Compile Include="Controllers\AlmacenesController.vb" />
     <Compile Include="Controllers\ArticulosController.vb" />
     <Compile Include="Controllers\BancosController.vb" />
+    <Compile Include="Controllers\CentrosCostoController.vb" />
     <Compile Include="Controllers\FacturasController.vb" />
     <Compile Include="Controllers\MonedaController.vb" />
     <Compile Include="Controllers\PaisesController.vb" />
@@ -208,6 +210,7 @@
     <Compile Include="Models\FacturaSAP.vb" />
     <Compile Include="Models\Funciones.vb" />
     <Compile Include="Models\RespuestaArticulos.vb" />
+    <Compile Include="Models\RespuestaCentrosCosto.vb" />
     <Compile Include="Models\RespuestaConexion.vb" />
     <Compile Include="Models\RespuestaFacturaSAP.vb" />
     <Compile Include="Models\RespuestaMoneda.vb" />
@@ -316,8 +319,10 @@
   <ItemGroup>
     <Folder Include="App_Data\" />
     <Folder Include="Properties\" />
+    <Folder Include="Views\Almacenes\" />
     <Folder Include="Views\Articulos\" />
     <Folder Include="Views\Bancos\" />
+    <Folder Include="Views\CentrosCosto\" />
     <Folder Include="Views\Facturas\" />
     <Folder Include="Views\Moneda\" />
     <Folder Include="Views\Paises\" />
