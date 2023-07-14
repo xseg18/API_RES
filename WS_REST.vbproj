@@ -202,6 +202,7 @@
     <Compile Include="Global.asax.vb">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Models\RespuestaBanco.vb" />
     <Compile Include="Models\Conexion.vb" />
     <Compile Include="Models\ConexionSAP.vb" />
     <Compile Include="Models\FacturaSAP.vb" />
