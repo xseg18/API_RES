@@ -227,3 +227,10 @@ C:\Users\ximen\OneDrive\Documentos\Trabajo\API_RES\obj\Debug\WS_REST.vbproj.Copy
 C:\Users\ximen\OneDrive\Documentos\Trabajo\API_RES\obj\Debug\WS_REST.dll
 C:\Users\ximen\OneDrive\Documentos\Trabajo\API_RES\obj\Debug\WS_REST.xml
 C:\Users\ximen\OneDrive\Documentos\Trabajo\API_RES\obj\Debug\WS_REST.pdb
+C:\Users\Administrador\Documents\API_RES\obj\Debug\WS_REST.vbproj.AssemblyReference.cache
+C:\Users\Administrador\Documents\API_RES\obj\Debug\WS_REST.Resources.resources
+C:\Users\Administrador\Documents\API_RES\obj\Debug\WS_REST.vbproj.GenerateResource.cache
+C:\Users\Administrador\Documents\API_RES\obj\Debug\WS_REST.vbproj.CoreCompileInputs.cache
+C:\Users\Administrador\Documents\API_RES\obj\Debug\WS_REST.dll
+C:\Users\Administrador\Documents\API_RES\obj\Debug\WS_REST.xml
+C:\Users\Administrador\Documents\API_RES\obj\Debug\WS_REST.pdb
