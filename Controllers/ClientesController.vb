@@ -21,7 +21,7 @@ Namespace Controllers
 
                     oRecordsetConsulta = Nothing
                     oRecordsetConsulta = oConexion.GetBusinessObject(BoObjectTypes.BoRecordset)
-                    StrQuery = "select A.""CardCode"", A.""CardName"", A.""LicTradNum"",B.""CardFName"", B.""Street"", B.""City"", C.""Name"" as Departamento, D.""Name"" as Pais from OCRD A 
+                    StrQuery = "select A.""CardCode"", A.""CardName"", A.""LicTradNum"",A.""CardFName"", B.""Street"", B.""City"", C.""Name"" as Departamento, D.""Name"" as Pais from OCRD A 
 inner join CRD1 B on A.""CardCode"" = B.""CardCode"" 
 inner join OCST C on C.""Code"" = B.""State"" 
 inner join OCRY D on D.""Code"" = B.""Country"""
