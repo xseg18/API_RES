@@ -217,6 +217,7 @@
     <Compile Include="Models\RespuestaArticulos.vb" />
     <Compile Include="Models\RespuestaCentrosCosto.vb" />
     <Compile Include="Models\RespuestaConexion.vb" />
+    <Compile Include="Models\RespuestaCuentasContables.vb" />
     <Compile Include="Models\RespuestaCuentasPropias.vb" />
     <Compile Include="Models\RespuestaFacturaSAP.vb" />
     <Compile Include="Models\RespuestaMoneda.vb" />
