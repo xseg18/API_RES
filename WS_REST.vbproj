@@ -197,7 +197,8 @@
     <Compile Include="Controllers\BancosController.vb" />
     <Compile Include="Controllers\CentrosCostoController.vb" />
     <Compile Include="Controllers\ClientesController.vb" />
-    <Compile Include="Controllers\CuentasController.vb" />
+    <Compile Include="Controllers\CuentasContablesController.vb" />
+    <Compile Include="Controllers\CuentasPropiasController.vb" />
     <Compile Include="Controllers\FacturasController.vb" />
     <Compile Include="Controllers\MonedaController.vb" />
     <Compile Include="Controllers\PaisesController.vb" />
@@ -216,6 +217,7 @@
     <Compile Include="Models\RespuestaArticulos.vb" />
     <Compile Include="Models\RespuestaCentrosCosto.vb" />
     <Compile Include="Models\RespuestaConexion.vb" />
+    <Compile Include="Models\RespuestaCuentasPropias.vb" />
     <Compile Include="Models\RespuestaFacturaSAP.vb" />
     <Compile Include="Models\RespuestaMoneda.vb" />
     <Compile Include="Models\RespuestaPaises.vb" />
@@ -328,6 +330,7 @@
     <Folder Include="Views\Bancos\" />
     <Folder Include="Views\CentrosCosto\" />
     <Folder Include="Views\Clientes\" />
+    <Folder Include="Views\CuentasContables\" />
     <Folder Include="Views\Cuentas\" />
     <Folder Include="Views\Facturas\" />
     <Folder Include="Views\Moneda\" />
