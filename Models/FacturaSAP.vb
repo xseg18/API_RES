@@ -7,6 +7,7 @@
     Public Property DocDueDate As String
     Public Property Comments As String
     Public Property Address As String
+    Public Property DocTotal As String
 
     Public LstItems As New List(Of items)
 
