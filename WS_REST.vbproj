@@ -199,6 +199,7 @@
     <Compile Include="Controllers\ClientesController.vb" />
     <Compile Include="Controllers\CuentasContablesController.vb" />
     <Compile Include="Controllers\CuentasPropiasController.vb" />
+    <Compile Include="Controllers\FacturasAsientoController.vb" />
     <Compile Include="Controllers\FacturasController.vb" />
     <Compile Include="Controllers\MonedaController.vb" />
     <Compile Include="Controllers\PaisesController.vb" />
