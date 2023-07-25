@@ -38,7 +38,7 @@ Namespace Controllers
                         For i As Integer = 0 To oRecordsetConsulta.RecordCount - 1
                             ObjRespuesta = New Almacen
                             ObjRespuesta.WhsCode = oRecordsetConsulta.Fields.Item("WhsCode").Value
-                            ObjRespuesta.WhsName = oRecordsetConsulta.Fields.Item("ItemName").Value
+                            ObjRespuesta.WhsName = oRecordsetConsulta.Fields.Item("WhsName").Value
                             oRespuesta.LstAlmacenes.Add(ObjRespuesta)
                             oRecordsetConsulta.MoveNext()
                         Next

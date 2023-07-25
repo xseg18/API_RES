@@ -21,7 +21,7 @@ Namespace Controllers
 
                     oRecordsetConsulta = Nothing
                     oRecordsetConsulta = oConexion.GetBusinessObject(BoObjectTypes.BoRecordset)
-                    StrQuery = "select ""BankCode"". ""Account"" from DSC1"
+                    StrQuery = "select ""BankCode"", ""Account"" from DSC1"
                     oRecordsetConsulta.DoQuery(StrQuery)
                     oRecordsetConsulta.MoveFirst()
                     oRespuesta = New RespuestaCuentasPropias
