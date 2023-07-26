@@ -25,6 +25,7 @@ Namespace Controllers
                 oConexion = Funciones.FncSAPConexion(NombreBaseDatos, lIntCodigoError, lStrTextoError)
 
                 If lStrTextoError.Length = 0 Then
+
                     oDocumento = Nothing
                     oDocumento = oConexion.GetBusinessObject(BoObjectTypes.oJournalEntries)
 
