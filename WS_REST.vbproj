@@ -196,6 +196,7 @@
     <Compile Include="Areas\HelpPage\XmlDocumentationProvider.vb" />
     <Compile Include="Controllers\AlmacenesController.vb" />
     <Compile Include="Controllers\ArticulosController.vb" />
+    <Compile Include="Controllers\AsientoContableController.vb" />
     <Compile Include="Controllers\BancosController.vb" />
     <Compile Include="Controllers\CentrosCostoController.vb" />
     <Compile Include="Controllers\ClientesController.vb" />
@@ -209,6 +210,7 @@
     <Compile Include="Global.asax.vb">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Models\AsientoSAP.vb" />
     <Compile Include="Models\RespuestaCliente.vb" />
     <Compile Include="Models\RespuestaAlmacenes.vb" />
     <Compile Include="Models\RespuestaBanco.vb" />
