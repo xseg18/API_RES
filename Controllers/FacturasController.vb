@@ -53,7 +53,7 @@ Namespace Controllers
                     If intRespuesta = 0 Then
                         oRespuesta.Mensaje = "Factura Creada Correctamente"
                         oRespuesta.Estado = True
-                        oRespuesta.IDFacturaSAP = oConexion.GetNewObjectKey
+                        oRespuesta.IdAsientoSAP = oConexion.GetNewObjectKey
                     Else
                         oConexion.GetLastError(lErrCode, sErrMsg)
                         oRespuesta.Mensaje = "Error Al Crear Factura: " & lErrCode & " - " & sErrMsg

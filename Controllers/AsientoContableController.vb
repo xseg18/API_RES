@@ -33,6 +33,7 @@ Namespace Controllers
                     oDocumento.DueDate = pAsientoContable.DueDate
                     oDocumento.TaxDate = pAsientoContable.TaxDate
                     oDocumento.Memo = pAsientoContable.Memo
+                    oDocumento.Series = pAsientoContable.Series
                     oDocumento.ProjectCode = pAsientoContable.ProjectCode
                     oDocumento.Reference = pAsientoContable.Reference
                     oDocumento.Reference2 = pAsientoContable.Reference2
@@ -46,8 +47,8 @@ Namespace Controllers
                             oDocumento.Lines.Add()
                         End If
 
-                        oDocumento.Lines.ShortName = Busca_Cuenta(oConexion, line.ShortName)
-                        oDocumento.Lines.AccountCode = Busca_Cuenta(oConexion, line.AccountCode)
+                        oDocumento.Lines.ShortName = line.AccountCode
+                        oDocumento.Lines.AccountCode = line.AccountCode
                         oDocumento.Lines.Debit = line.debit
                         oDocumento.Lines.Credit = line.Credit
                         oDocumento.Lines.LineMemo = line.LineMemo
@@ -58,39 +59,14 @@ Namespace Controllers
                         iCont += 1
                     Next
 
-                    'oDocumento.Lines.ShortName = pAsientoContable.CardCode
-                    'oDocumento.Lines.Debit = pAsientoContable.DocTotal
-                    'oDocumento.Lines.Credit = 0
-                    'oDocumento.Lines.Add()
 
-
-                    'For Each itm In pFactura.LstItems
-                    '    Dim Item As SAPbobsCOM.Items = oConexion.GetBusinessObject(SAPbobsCOM.BoObjectTypes.oItems)
-                    '    Item.GetByKey(itm.ItemCode)
-                    '    Dim ItemGroup As SAPbobsCOM.ItemGroups = oConexion.GetBusinessObject(SAPbobsCOM.BoObjectTypes.oItems)
-                    '    ItemGroup.GetByKey(Item.ItemsGroupCode)
-                    '    oDocumento.Lines.ShortName = ItemGroup.ExpensesAccount
-                    '    If (itm.TaxCode = "IVA") Then
-                    '        oDocumento.Lines.Credit = itm.PriceAfterVAT / 1.12
-                    '        oDocumento.Lines.Debit = 0
-                    '        oDocumento.Lines.Add()
-                    '        oDocumento.Lines.ShortName = "_SYS00000000345"
-                    '        oDocumento.Lines.Credit = (itm.PriceAfterVAT / 1.12) * 12%
-                    '        oDocumento.Lines.Debit = 0
-                    '        oDocumento.Lines.Add()
-                    '    Else
-                    '        oDocumento.Lines.Credit = itm.PriceAfterVAT
-                    '        oDocumento.Lines.Debit = 0
-                    '        oDocumento.Lines.Add()
-                    '    End If
-                    'Next
 
                     intRespuesta = oDocumento.Add()
 
                     If intRespuesta = 0 Then
-                        oRespuesta.Mensaje = "Factura Creada Correctamente"
+                        oRespuesta.Mensaje = "Asiento Creado Correctamente"
                         oRespuesta.Estado = True
-                        oRespuesta.IDFacturaSAP = oConexion.GetNewObjectKey
+                        oRespuesta.IDAsientoSAP = oConexion.GetNewObjectKey
                     Else
                         oConexion.GetLastError(lErrCode, sErrMsg)
                         oRespuesta.Mensaje = "Error Al Crear Factura: " & lErrCode & " - " & sErrMsg
