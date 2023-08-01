@@ -3,6 +3,7 @@ Imports System.Web.Http
 Imports System.Web.Mvc
 Imports System.Xml
 Imports SAPbobsCOM
+Imports WS_REST.RespuestaArticulos
 
 Namespace Controllers
     Public Class FacturasController
@@ -52,7 +53,7 @@ Namespace Controllers
                     If intRespuesta = 0 Then
                         oRespuesta.Mensaje = "Factura Creada Correctamente"
                         oRespuesta.Estado = True
-                        oRespuesta.IDFacturaSAP = oConexion.GetNewObjectKey
+                        oRespuesta.IdAsientoSAP = oConexion.GetNewObjectKey
                     Else
                         oConexion.GetLastError(lErrCode, sErrMsg)
                         oRespuesta.Mensaje = "Error Al Crear Factura: " & lErrCode & " - " & sErrMsg

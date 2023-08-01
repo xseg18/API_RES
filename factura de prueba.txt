@@ -1,0 +1,20 @@
+{
+"CardCode":"C01",
+"TaxDate":"2023-07-24",
+"DocDate":"2023-07-24",
+"DocDueDate":"2023-07-24",
+"Comments":"Prueba de asiento",
+"DocTotal":100.00,
+"LstItems":[
+	{
+		"ItemCode":"40106",
+		"TaxCode":"IVA",
+		"PriceAfterVAt":50.00
+	},
+{
+		"ItemCode":"40104",
+		"TaxCode":"EXE",
+		"PriceAfterVAt":50.00
+	}
+]
+}

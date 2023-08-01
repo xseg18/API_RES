@@ -20,7 +20,7 @@
     <OptionInfer>On</OptionInfer>
     <MvcBuildViews>false</MvcBuildViews>
     <UseIISExpress>true</UseIISExpress>
-    <Use64BitIISExpress />
+    <Use64BitIISExpress>false</Use64BitIISExpress>
     <IISExpressSSLPort>44381</IISExpressSSLPort>
     <IISExpressAnonymousAuthentication />
     <IISExpressWindowsAuthentication />
@@ -158,6 +158,8 @@
     <Import Include="System.Web.UI.WebControls" />
     <Import Include="System.Web.UI.WebControls.WebParts" />
     <Import Include="System.Web.UI.HtmlControls" />
+    <Import Include="WS_REST" />
+    <Import Include="WS_REST.Controllers" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="App_Start\BundleConfig.vb" />
@@ -192,7 +194,14 @@
     <Compile Include="Areas\HelpPage\SampleGeneration\SampleDirection.vb" />
     <Compile Include="Areas\HelpPage\SampleGeneration\TextSample.vb" />
     <Compile Include="Areas\HelpPage\XmlDocumentationProvider.vb" />
+    <Compile Include="Controllers\AlmacenesController.vb" />
     <Compile Include="Controllers\ArticulosController.vb" />
+    <Compile Include="Controllers\AsientoContableController.vb" />
+    <Compile Include="Controllers\BancosController.vb" />
+    <Compile Include="Controllers\CentrosCostoController.vb" />
+    <Compile Include="Controllers\ClientesController.vb" />
+    <Compile Include="Controllers\CuentasContablesController.vb" />
+    <Compile Include="Controllers\CuentasPropiasController.vb" />
     <Compile Include="Controllers\FacturasController.vb" />
     <Compile Include="Controllers\MonedaController.vb" />
     <Compile Include="Controllers\PaisesController.vb" />
@@ -201,12 +210,19 @@
     <Compile Include="Global.asax.vb">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Models\AsientoSAP.vb" />
+    <Compile Include="Models\RespuestaCliente.vb" />
+    <Compile Include="Models\RespuestaAlmacenes.vb" />
+    <Compile Include="Models\RespuestaBanco.vb" />
     <Compile Include="Models\Conexion.vb" />
     <Compile Include="Models\ConexionSAP.vb" />
     <Compile Include="Models\FacturaSAP.vb" />
     <Compile Include="Models\Funciones.vb" />
     <Compile Include="Models\RespuestaArticulos.vb" />
+    <Compile Include="Models\RespuestaCentrosCosto.vb" />
     <Compile Include="Models\RespuestaConexion.vb" />
+    <Compile Include="Models\RespuestaCuentasContables.vb" />
+    <Compile Include="Models\RespuestaCuentasPropias.vb" />
     <Compile Include="Models\RespuestaFacturaSAP.vb" />
     <Compile Include="Models\RespuestaMoneda.vb" />
     <Compile Include="Models\RespuestaPaises.vb" />
@@ -314,12 +330,56 @@
   <ItemGroup>
     <Folder Include="App_Data\" />
     <Folder Include="Properties\" />
+    <Folder Include="Views\Almacenes\" />
     <Folder Include="Views\Articulos\" />
+    <Folder Include="Views\Bancos\" />
+    <Folder Include="Views\CentrosCosto\" />
+    <Folder Include="Views\Clientes\" />
+    <Folder Include="Views\CuentasContables\" />
+    <Folder Include="Views\Cuentas\" />
     <Folder Include="Views\Facturas\" />
     <Folder Include="Views\Moneda\" />
     <Folder Include="Views\Paises\" />
     <Folder Include="Views\SAP\" />
     <Folder Include="Views\TasaCambio\" />
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="COMAdmin">
+      <Guid>{F618C513-DFB8-11D1-A2CF-00805FC79235}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="COMSVCSLib">
+      <Guid>{2A005C00-A5DE-11CF-9E66-00AA00A3F464}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="VBScript_RegExp_10">
+      <Guid>{3F4DACA7-160D-11D2-A8E9-00104B365C9F}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="VBScript_RegExp_55">
+      <Guid>{3F4DACA7-160D-11D2-A8E9-00104B365C9F}</Guid>
+      <VersionMajor>5</VersionMajor>
+      <VersionMinor>5</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
