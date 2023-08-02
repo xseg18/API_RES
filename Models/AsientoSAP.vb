@@ -17,11 +17,8 @@
         Public Property Credit As Double
         Public Property Debit As Double
         Public Property AccountCode As String
-
         Public Property LineMemo As String
-
         Public Property CostingCode As String
-
     End Class
 
 End Class

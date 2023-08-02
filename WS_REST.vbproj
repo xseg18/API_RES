@@ -204,13 +204,16 @@
     <Compile Include="Controllers\CuentasPropiasController.vb" />
     <Compile Include="Controllers\FacturasController.vb" />
     <Compile Include="Controllers\MonedaController.vb" />
+    <Compile Include="Controllers\PagoController.vb" />
     <Compile Include="Controllers\PaisesController.vb" />
+    <Compile Include="Controllers\PeriodoContableController.vb" />
     <Compile Include="Controllers\SAPController.vb" />
     <Compile Include="Controllers\TasaCambioController.vb" />
     <Compile Include="Global.asax.vb">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="Models\AsientoSAP.vb" />
+    <Compile Include="Models\Pagos.vb" />
     <Compile Include="Models\RespuestaCliente.vb" />
     <Compile Include="Models\RespuestaAlmacenes.vb" />
     <Compile Include="Models\RespuestaBanco.vb" />
@@ -225,7 +228,9 @@
     <Compile Include="Models\RespuestaCuentasPropias.vb" />
     <Compile Include="Models\RespuestaFacturaSAP.vb" />
     <Compile Include="Models\RespuestaMoneda.vb" />
+    <Compile Include="Models\RespuestaPagos.vb" />
     <Compile Include="Models\RespuestaPaises.vb" />
+    <Compile Include="Models\RespuestaPeriodoContable.vb" />
     <Compile Include="Models\RespuestaTasaCambio.vb" />
     <Compile Include="My Project\AssemblyInfo.vb" />
     <Compile Include="My Project\Application.Designer.vb">
@@ -339,7 +344,9 @@
     <Folder Include="Views\Cuentas\" />
     <Folder Include="Views\Facturas\" />
     <Folder Include="Views\Moneda\" />
+    <Folder Include="Views\Pago\" />
     <Folder Include="Views\Paises\" />
+    <Folder Include="Views\PeriodoContable\" />
     <Folder Include="Views\SAP\" />
     <Folder Include="Views\TasaCambio\" />
   </ItemGroup>

@@ -5,7 +5,7 @@ https://go.microsoft.com/fwlink/?LinkID=208121.
 <Project>
   <PropertyGroup>
     <_PublishTargetUrl>C:\Users\Administrador\Documents\WS_RES</_PublishTargetUrl>
-    <History>True|2023-08-01T16:19:49.4898216Z;True|2023-08-01T09:56:09.9152886-06:00;True|2023-08-01T08:42:40.7056169-06:00;</History>
+    <History>True|2023-08-01T21:49:54.0007123Z;True|2023-08-01T10:19:49.4898216-06:00;True|2023-08-01T09:56:09.9152886-06:00;True|2023-08-01T08:42:40.7056169-06:00;</History>
     <LastFailureDetails />
   </PropertyGroup>
   <ItemGroup>
@@ -196,7 +196,7 @@ https://go.microsoft.com/fwlink/?LinkID=208121.
       <publishTime>07/17/2023 14:16:42</publishTime>
     </File>
     <File Include="bin/SAPBusinessOneSDK.dll">
-      <publishTime>08/28/2018 20:18:16</publishTime>
+      <publishTime>08/01/2023 10:48:35</publishTime>
     </File>
     <File Include="bin/System.Net.Http.Formatting.dll">
       <publishTime>07/17/2023 14:16:41</publishTime>
@@ -232,13 +232,13 @@ https://go.microsoft.com/fwlink/?LinkID=208121.
       <publishTime>07/17/2023 14:16:42</publishTime>
     </File>
     <File Include="bin/WS_REST.dll">
-      <publishTime>08/01/2023 10:19:48</publishTime>
+      <publishTime>08/01/2023 15:49:52</publishTime>
     </File>
     <File Include="bin/WS_REST.pdb">
-      <publishTime>08/01/2023 10:19:48</publishTime>
+      <publishTime>08/01/2023 15:49:52</publishTime>
     </File>
     <File Include="bin/WS_REST.xml">
-      <publishTime>08/01/2023 10:19:47</publishTime>
+      <publishTime>08/01/2023 15:49:52</publishTime>
     </File>
     <File Include="Content/bootstrap-theme.css">
       <publishTime>07/17/2023 14:16:40</publishTime>
